@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-07-26T22:19:54.689008" rpa="false" schemaversion="5">
+<suite id="s1" name="Portfolio.Robot" source="D:\Automation-Assignment\automation\robot\portfolio.robot">
+<suite id="s1-s1" name="Portfolio" source="D:\Automation-Assignment\automation\robot\portfolio.robot\portfolio.robot">
+<test id="s1-s1-t1" name="Verify Portfolio Homepage" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-26T22:19:55.267009" level="INFO">Opening browser 'Chrome' to base url 'http://127.0.0.1:5500/Portfolio/index.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-26T22:19:55.261279" elapsed="2.706167"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-26T22:19:57.968118" elapsed="0.038056"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-07-26T22:19:58.018822" level="INFO">Page title is 'Aman Kumar | Software Quality Assurance Engineer'.</msg>
+<arg>Aman Kumar | Software Quality Assurance Engineer</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-07-26T22:19:58.006884" elapsed="0.012122"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-07-26T22:19:58.323721" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-07-26T22:19:58.019574" elapsed="0.304357"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-26T22:19:58.324461" elapsed="2.286315"/>
+</kw>
+<status status="PASS" start="2026-07-26T22:19:55.259234" elapsed="5.352981"/>
+</test>
+<status status="PASS" start="2026-07-26T22:19:54.746683" elapsed="5.868187"/>
+</suite>
+<status status="PASS" start="2026-07-26T22:19:54.691653" elapsed="5.926669"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Portfolio.Robot" id="s1" pass="1" fail="0" skip="0">Portfolio.Robot</stat>
+<stat name="Portfolio" id="s1-s1" pass="1" fail="0" skip="0">Portfolio.Robot.Portfolio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
